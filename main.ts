@@ -32,14 +32,31 @@ input.onGesture(Gesture.Shake, function () {
     dice_5 = randint(1, 6)
 })
 basic.forever(function () {
-    basic.showString("D1")
-    basic.showNumber(dice_1)
-    basic.showString("D2")
-    basic.showNumber(dice2)
-    basic.showString("D3")
-    basic.showNumber(dice_3)
-    basic.showString("D4")
-    basic.showNumber(dice_4)
-    basic.showString("D5")
-    basic.showNumber(dice_5)
+    if (true) {
+        basic.showString("D1")
+        basic.showNumber(dice_1)
+        basic.showString("D2")
+        basic.showNumber(dice2)
+        basic.showString("D3")
+        basic.showNumber(dice_3)
+        basic.showString("D4")
+        basic.showNumber(dice_4)
+        basic.showString("D5")
+        basic.showNumber(dice_5)
+    } else {
+        let s5 = 0
+        let s4 = 0
+        let s3 = 0
+        let s2 = 0
+        basic.showString("S1")
+        basic.showNumber(s1)
+        basic.showString("S2")
+        basic.showNumber(s2)
+        basic.showString("S3")
+        basic.showNumber(s3)
+        basic.showString("S4")
+        basic.showNumber(s4)
+        basic.showString("S5")
+        basic.showNumber(s5)
+    }
 })
